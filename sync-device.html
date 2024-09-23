@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Devices - GlowTech Medspa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sync.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <img src="icon.png" alt="Health Logo" class="health-logo"> <!-- Add Health Logo -->
+                    <h2 class="logo">GlowTech</h2>
+                    <button id="closeSidebar" class="close-sidebar">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="nav-item"><i data-lucide="home"></i> Home</a>
+                    <a href="appointments.html" class="nav-item"><i data-lucide="calendar"></i> Appointments</a>
+                    <a href="messages.html" class="nav-item"><i data-lucide="message-circle"></i> Messages</a>
+                    <a href="education.html" class="nav-item"><i data-lucide="book"></i> Education</a>
+                    <a href="profile.html" class="nav-item"><i data-lucide="user"></i> Profile</a>
+                    <a href="settings.html" class="nav-item"><i data-lucide="settings"></i> Settings</a>
+                </nav>
+            </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="openSidebar" class="open-sidebar">
+                    <i data-lucide="menu"></i>
+                </button>
+                <h1 class="page-title">Sync Your Devices</h1>
+                <div class="user-actions">
+                    <button class="notification-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Sarah" class="user-avatar">
+                </div>
+            </header>
+
+            <div class="sync-devices-content">
+                <h2>Available Devices</h2>
+                <div class="device-list">
+                    <!-- LED Mask -->
+                    <div class="device-item">
+                        <div class="device-info">
+                            <i data-lucide="zap" class="device-icon"></i>
+                            <span>LED Mask</span>
+                        </div>
+                        <button class="sync-btn" onclick="syncDevice('LED Mask')">Sync Device</button>
+                        <span class="device-status" id="led-mask-status">Not Synced</span>
+                    </div>
+
+                    <!-- Hydration Meter -->
+                    <div class="device-item">
+                        <div class="device-info">
+                            <i data-lucide="droplet" class="device-icon"></i>
+                            <span>Hydration Meter</span>
+                        </div>
+                        <button class="sync-btn" onclick="syncDevice('Hydration Meter')">Sync Device</button>
+                        <span class="device-status" id="hydration-meter-status">Not Synced</span>
+                    </div>
+
+                    <!-- UV Light Therapy -->
+                    <div class="device-item">
+                        <div class="device-info">
+                            <i data-lucide="sun" class="device-icon"></i>
+                            <span>UV Light Therapy</span>
+                        </div>
+                        <button class="sync-btn" onclick="syncDevice('UV Light Therapy')">Sync Device</button>
+                        <span class="device-status" id="uv-light-status">Not Synced</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function syncDevice(deviceName) {
+            // Simulate device sync with a timeout
+            setTimeout(() => {
+                alert(deviceName + " synced successfully!");
+                document.getElementById(deviceName.toLowerCase().replace(" ", "-") + "-status").textContent = "Synced";
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

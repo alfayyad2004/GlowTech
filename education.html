@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - GlowTech Medspa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <img src="icon.png" alt="Health Logo" class="health-logo"> <!-- Add Health Logo -->
+                    <h2 class="logo">GlowTech</h2>
+                    <button id="closeSidebar" class="close-sidebar">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="nav-item"><i data-lucide="home"></i> Home</a>
+                    <a href="appointments.html" class="nav-item"><i data-lucide="calendar"></i> Appointments</a>
+                    <a href="messages.html" class="nav-item"><i data-lucide="message-circle"></i> Messages</a>
+                    <a href="education.html" class="nav-item"><i data-lucide="book"></i> Education</a>
+                    <a href="profile.html" class="nav-item"><i data-lucide="user"></i> Profile</a>
+                    <a href="settings.html" class="nav-item"><i data-lucide="settings"></i> Settings</a>
+                </nav>
+            </aside>
+
+
+        <main class="main-content">
+            <header class="main-header">
+                <button id="openSidebar" class="open-sidebar">
+                    <i data-lucide="menu"></i>
+                </button>
+                <h1 class="welcome-message">Education Center</h1>
+                <div class="user-actions">
+                    <button class="notification-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Sarah" class="user-avatar">
+                </div>
+            </header>
+
+            <div class="education-section">
+                <h2>Learn More About Skincare</h2>
+                <div class="education-item">
+                    <span>Latest in Skincare Tech</span>
+                    <button class="read-btn">Read</button>
+                </div>
+                <div class="education-item">
+                    <span>Understanding Microneedling</span>
+                    <button class="watch-btn">Watch Video</button>
+                </div>
+
+                <script>
+                  const watchBtn = document.querySelector('.watch-btn');
+                  const youtubeVideoId = 'VtoeadAl86Y&t'; // Replace with your actual YouTube video ID
+
+                  watchBtn.addEventListener('click', () => {
+                    const youtubeLink = `https://www.youtube.com/watch?v=${youtubeVideoId}`;
+                    window.location.href = youtubeLink;
+                  });
+                </script>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

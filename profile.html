@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - GlowTech Medspa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+        <div class="app-container">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <img src="icon.png" alt="Health Logo" class="health-logo"> <!-- Add Health Logo -->
+                    <h2 class="logo">GlowTech</h2>
+                    <button id="closeSidebar" class="close-sidebar">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="nav-item"><i data-lucide="home"></i> Home</a>
+                    <a href="appointments.html" class="nav-item"><i data-lucide="calendar"></i> Appointments</a>
+                    <a href="messages.html" class="nav-item"><i data-lucide="message-circle"></i> Messages</a>
+                    <a href="education.html" class="nav-item"><i data-lucide="book"></i> Education</a>
+                    <a href="profile.html" class="nav-item"><i data-lucide="user"></i> Profile</a>
+                    <a href="settings.html" class="nav-item"><i data-lucide="settings"></i> Settings</a>
+                </nav>
+            </aside>
+
+
+        <main class="main-content">
+            <header class="main-header">
+                <button id="openSidebar" class="open-sidebar">
+                    <i data-lucide="menu"></i>
+                </button>
+                <h1 class="welcome-message">Your Profile</h1>
+                <div class="user-actions">
+                    <button class="notification-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Sarah" class="user-avatar">
+                </div>
+            </header>
+
+            <div class="profile-section">
+                <h2>Personal Information</h2>
+                <p>Name: Sarah Johnson</p>
+                <p>Email: sarah.johnson@example.com</p>
+                <button class="edit-btn">Edit

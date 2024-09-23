@@ -1,0 +1,263 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>GlowTech Medspa</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="icon" type="image/x-icon" href="favicon.ico"> <!-- Favicon -->
+            <script src="https://unpkg.com/lucide@latest"></script>
+        </head>
+        <body>
+            <div class="app-container">
+                <!-- Sidebar -->
+                <aside id="sidebar" class="sidebar">
+                    <div class="sidebar-header">
+                        <img src="icon.png" alt="Health Logo" class="health-logo"> <!-- Add Health Logo -->
+                        <h2 class="logo">GlowTech</h2>
+                        <button id="closeSidebar" class="close-sidebar">
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+                    <nav class="sidebar-nav">
+                        <a href="index.html" class="nav-item"><i data-lucide="home"></i> Home</a>
+                        <a href="appointments.html" class="nav-item"><i data-lucide="calendar"></i> Appointments</a>
+                        <a href="messages.html" class="nav-item"><i data-lucide="message-circle"></i> Messages</a>
+                        <a href="education.html" class="nav-item"><i data-lucide="book"></i> Education</a>
+                        <a href="profile.html" class="nav-item"><i data-lucide="user"></i> Profile</a>
+                        <a href="settings.html" class="nav-item"><i data-lucide="settings"></i> Settings</a>
+                    </nav>
+                </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <button id="openSidebar" class="open-sidebar">
+                    <i data-lucide="menu"></i>
+                </button>
+                <h1 class="welcome-message">Welcome, Sarah</h1>
+                <div class="user-actions">
+                    <button class="notification-btn">
+                        <i data-lucide="bell"></i>
+                        <span class="notification-badge">3</span>
+                    </button>
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Sarah" class="user-avatar">
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <!-- AI-Powered Skin Analysis -->
+                <div class="card skin-analysis">
+                    <div class="card-header">
+                        <h2 class="card-title">AI Skin Analysis</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="skin-score">
+                            <span class="score-label">Skin Score:</span>
+                            <span class="score-value">85</span>
+                        </div>
+                        <button class="analyze-btn">Analyze Now</button>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-label">Hydration</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span class="metric-value">75%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Elasticity</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                                <span class="metric-value">60%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Sun Damage</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 30%"></div>
+                                </div>
+                                <span class="metric-value">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personalized Treatment Plans -->
+                <div class="card treatment-plan">
+                    <div class="card-header">
+                        <h2 class="card-title">Your Treatment Plan</h2>
+                    </div>
+                    <div class="card-content">
+                        <ul class="treatment-list">
+                            <li class="treatment-item">
+                                <span>Hydrafacial</span>
+                                <a href="appointments.html"><button class="book-btn">Book Now <i data-lucide="chevron-right"></i></button></a>
+                            </li>
+                            <li class="treatment-item">
+                                <span>Microneedling</span>
+                                <a href="appointments.html"><button class="book-btn">Book Now <i data-lucide="chevron-right"></i></button></a>
+                            </li>
+                            <li class="treatment-item">
+                                <span>LED Light Therapy</span>
+                                <a href="appointments.html"><button class="book-btn">Book Now <i data-lucide="chevron-right"></i></button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Progress Tracking -->
+                <div class="card progress-tracking">
+                    <div class="card-header">
+                        <h2 class="card-title">Your Progress</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="tabs">
+                            <button class="tab-btn active" data-tab="week">Week</button>
+                            <button class="tab-btn" data-tab="month">Month</button>
+                            <button class="tab-btn" data-tab="year">Year</button>
+                        </div>
+                        <div class="tab-content active" id="week">
+                            <div class="progress-item">
+                                <span class="progress-label">Skin Hydration</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span class="progress-value">+5% <i data-lucide="chevron-up"></i></span>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="month">
+                            <div class="progress-item">
+                                <span class="progress-label">Skin Elasticity</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-value">+12% <i data-lucide="chevron-up"></i></span>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="year">
+                            <div class="progress-item">
+                                <span class="progress-label">Overall Skin Health</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-value">+25% <i data-lucide="chevron-up"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smart Device Integration -->
+                <div class="card device-integration">
+                    <div class="card-header">
+                        <h2 class="card-title">Smart Device Integration</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="device-item">
+                            <div class="device-info">
+                                <i data-lucide="zap" class="device-icon"></i>
+                                <span>LED Mask</span>
+                            </div>
+                            <span class="device-status">Connected</span>
+                        </div>
+                        <div class="device-item">
+                            <div class="device-info">
+                                <i data-lucide="droplet" class="device-icon"></i>
+                                <span>Hydration Meter</span>
+                            </div>
+                            <span class="device-status">Connected</span>
+                        </div>
+                        <a href="sync-device.html">
+                            <button class="sync-btn">Sync Devices</button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Secure Client Portal -->
+                <div class="card client-portal">
+                    <div class="card-header">
+                        <h2 class="card-title">Secure Client Portal</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="portal-item">
+                            <div class="portal-info">
+                                <i data-lucide="file-text" class="portal-icon"></i>
+                                <span>Treatment History</span>
+                            </div>
+                            <a href="profile.html"><button class="view-btn">View</button></a>
+                        </div>
+                        <div class="portal-item">
+                            <div class="portal-info">
+                                <i data-lucide="image" class="portal-icon"></i>
+                                <span>Before & After Photos</span>
+                            </div>
+                            <a href="profile.html"><button class="view-btn">View</button></a>
+                        </div>
+                        <div class="portal-item">
+                            <div class="portal-info">
+                                <i data-lucide="message-square" class="portal-icon"></i>
+                                <span>Skincare Advice</span>
+                            </div>
+                            <a href="messages.html"><button class="view-btn">View</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- In-App Messaging Preview -->
+                <div class="card messaging-preview">
+                    <div class="card-header">
+                        <h2 class="card-title">Messages</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="message-preview">
+                            <img src="https://i.pravatar.cc/150?img=59" alt="Dr. Smith" class="message-avatar">
+                            <div class="message-content">
+                                <p class="message-sender">Dr. Smith</p>
+                                <p class="message-text">Your recent treatment results look great!</p>
+                            </div>
+                            <span class="message-badge">New</span>
+                        </div>
+                        <a href="messages.html"><button class="view-all-btn">View All Messages</button></a>
+                    </div>
+                </div>
+
+                <!-- Education Center Preview -->
+                <div class="card education-center">
+                    <div class="card-header">
+                        <h2 class="card-title">Education Center</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="education-item">
+                            <span>Latest in Skincare Tech</span>
+                            <a href="education.html"><button class="read-btn">Read</button></a>
+                        </div>
+                        <div class="education-item">
+                            <span>Understanding Microneedling</span>
+                            <a href="education.html"><button class="watch-btn">Watch Video</button></a>
+                        </div>
+                        <a href="education.html"><button class="explore-btn">Explore Education Center</button></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+            <!-- Add this right before the closing body tag -->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Login to Secure Client Portal</h2>
+                    <form id="loginForm">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+
+</body>
+</html>
